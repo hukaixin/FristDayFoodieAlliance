@@ -73,10 +73,10 @@ public class Text01 {
 				if(names[names.length-1]!=null){
 					System.out.println("对不起，订单已满，请联系商家：");
 				}
-				//boolean isAdd=false;
+				boolean isAdd=false;
 				for(int i=0;i<names.length;i++){//这个for 主要是为了下面数据的保存
 					if(names[i]==null){	//记录是否可以点餐
-						//isAdd=true;//标志为空，里面可以点餐
+						isAdd=true;//标志为空，里面可以点餐
 						System.out.println("请输入您的姓名");
 						String name=input.next();
 						System.out.println("序号"+"\t"+"菜名"+"\t"+"单价"+"\t"+"点赞数");
@@ -235,6 +235,8 @@ public class Text01 {
 				break;
 
 		}while(sum==0);
+
+
 		System.out.println("谢谢光临小胡餐馆");
 
 
